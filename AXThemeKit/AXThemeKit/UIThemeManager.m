@@ -85,7 +85,7 @@ static inline UIColor *darkRatio(UIColor *color, CGFloat ratio){
                 if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
                     [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:ThemeKitBundleIdentify];
                     [[NSUserDefaults standardUserDefaults] synchronize];
-                    path = [[NSBundle mainBundle] pathForResource:@"DefaultTheme" ofType:@"json"];
+                    path = [[NSBundle bundleForClass:self.class] pathForResource:@"DefaultTheme" ofType:@"json"];
                 }
                 axThemeManager = [self modelWithPath:path];
                 // init settings
