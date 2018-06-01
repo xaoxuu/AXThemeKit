@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 # pod trunk push AXThemeKit.podspec
 
   s.name         = "AXThemeKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "这是一个简单的主题框架，可以更换主题色、字体、icon，支持主题商店。"
   s.homepage     = "http://xaoxuu.com"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
