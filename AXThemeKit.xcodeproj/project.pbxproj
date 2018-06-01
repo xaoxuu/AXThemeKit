@@ -13,9 +13,9 @@
 		CD41672020BCF37B005CFD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD41671F20BCF37B005CFD10 /* Assets.xcassets */; };
 		CD41672320BCF37B005CFD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41672120BCF37B005CFD10 /* LaunchScreen.storyboard */; };
 		CD41672620BCF37B005CFD10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41672520BCF37B005CFD10 /* main.m */; };
-		CD41673220BCF3A3005CFD10 /* UIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41672D20BCF3A3005CFD10 /* UIThemeManager.m */; };
-		CD41673320BCF3A3005CFD10 /* UIThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41672E20BCF3A3005CFD10 /* UIThemeModel.m */; };
-		CD4167A620BD28E4005CFD10 /* DefaultTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = CD4167A520BD28E3005CFD10 /* DefaultTheme.json */; };
+		CDC3D31D20C12B9C002ED8E8 /* AXThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC3D31920C12B9C002ED8E8 /* AXThemeManager.m */; };
+		CDC3D31E20C12B9C002ED8E8 /* AXThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC3D31B20C12B9C002ED8E8 /* AXThemeModel.m */; };
+		CDC3D31F20C12B9C002ED8E8 /* DefaultTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = CDC3D31C20C12B9C002ED8E8 /* DefaultTheme.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		CD41672220BCF37B005CFD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD41672420BCF37B005CFD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD41672520BCF37B005CFD10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CD41672D20BCF3A3005CFD10 /* UIThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIThemeManager.m; sourceTree = "<group>"; };
-		CD41672E20BCF3A3005CFD10 /* UIThemeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIThemeModel.m; sourceTree = "<group>"; };
-		CD41672F20BCF3A3005CFD10 /* AXThemeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXThemeKit.h; sourceTree = "<group>"; };
-		CD41673020BCF3A3005CFD10 /* UIThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIThemeManager.h; sourceTree = "<group>"; };
-		CD41673120BCF3A3005CFD10 /* UIThemeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIThemeModel.h; sourceTree = "<group>"; };
-		CD4167A520BD28E3005CFD10 /* DefaultTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultTheme.json; sourceTree = "<group>"; };
+		CDC3D31720C12B9C002ED8E8 /* AXThemeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXThemeKit.h; sourceTree = "<group>"; };
+		CDC3D31820C12B9C002ED8E8 /* AXThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXThemeManager.h; sourceTree = "<group>"; };
+		CDC3D31920C12B9C002ED8E8 /* AXThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXThemeManager.m; sourceTree = "<group>"; };
+		CDC3D31A20C12B9C002ED8E8 /* AXThemeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXThemeModel.h; sourceTree = "<group>"; };
+		CDC3D31B20C12B9C002ED8E8 /* AXThemeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXThemeModel.m; sourceTree = "<group>"; };
+		CDC3D31C20C12B9C002ED8E8 /* DefaultTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultTheme.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		CD41671520BCF37A005CFD10 /* AXThemeKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD41672C20BCF3A3005CFD10 /* AXThemeKit */,
+				CDC3D31620C12B9C002ED8E8 /* AXThemeKit */,
 				CD41671620BCF37A005CFD10 /* AppDelegate.h */,
 				CD41671720BCF37A005CFD10 /* AppDelegate.m */,
 				CD41671920BCF37A005CFD10 /* ViewController.h */,
@@ -81,15 +81,15 @@
 			path = AXThemeKit;
 			sourceTree = "<group>";
 		};
-		CD41672C20BCF3A3005CFD10 /* AXThemeKit */ = {
+		CDC3D31620C12B9C002ED8E8 /* AXThemeKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD41672F20BCF3A3005CFD10 /* AXThemeKit.h */,
-				CD41673120BCF3A3005CFD10 /* UIThemeModel.h */,
-				CD41672E20BCF3A3005CFD10 /* UIThemeModel.m */,
-				CD41673020BCF3A3005CFD10 /* UIThemeManager.h */,
-				CD41672D20BCF3A3005CFD10 /* UIThemeManager.m */,
-				CD4167A520BD28E3005CFD10 /* DefaultTheme.json */,
+				CDC3D31720C12B9C002ED8E8 /* AXThemeKit.h */,
+				CDC3D31820C12B9C002ED8E8 /* AXThemeManager.h */,
+				CDC3D31920C12B9C002ED8E8 /* AXThemeManager.m */,
+				CDC3D31A20C12B9C002ED8E8 /* AXThemeModel.h */,
+				CDC3D31B20C12B9C002ED8E8 /* AXThemeModel.m */,
+				CDC3D31C20C12B9C002ED8E8 /* DefaultTheme.json */,
 			);
 			path = AXThemeKit;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD41672320BCF37B005CFD10 /* LaunchScreen.storyboard in Resources */,
-				CD4167A620BD28E4005CFD10 /* DefaultTheme.json in Resources */,
+				CDC3D31F20C12B9C002ED8E8 /* DefaultTheme.json in Resources */,
 				CD41672020BCF37B005CFD10 /* Assets.xcassets in Resources */,
 				CD41671E20BCF37A005CFD10 /* Main.storyboard in Resources */,
 			);
@@ -167,9 +167,9 @@
 			files = (
 				CD41671B20BCF37A005CFD10 /* ViewController.m in Sources */,
 				CD41672620BCF37B005CFD10 /* main.m in Sources */,
+				CDC3D31D20C12B9C002ED8E8 /* AXThemeManager.m in Sources */,
+				CDC3D31E20C12B9C002ED8E8 /* AXThemeModel.m in Sources */,
 				CD41671820BCF37A005CFD10 /* AppDelegate.m in Sources */,
-				CD41673320BCF3A3005CFD10 /* UIThemeModel.m in Sources */,
-				CD41673220BCF3A3005CFD10 /* UIThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
