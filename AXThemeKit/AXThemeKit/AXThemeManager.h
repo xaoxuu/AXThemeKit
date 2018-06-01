@@ -1,5 +1,5 @@
 //
-//  UIThemeManager.h
+//  AXThemeManager.h
 //  AXKit
 //
 //  Created by xaoxuu on 11/10/2017.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIThemeModel.h"
+#import "AXThemeModel.h"
 
 
 
@@ -33,10 +33,10 @@ FOUNDATION_EXTERN NSNotificationName ThemeKitNotificationIconPackChanged;
 
 
 
-@class UIThemeManager;
-extern UIThemeManager *axThemeManager;
+@class AXThemeManager;
+extern AXThemeManager *axThemeManager;
 
-@interface UIThemeManager : UIThemeModel
+@interface AXThemeManager : AXThemeModel
 
 
 #pragma mark - life circle
@@ -51,7 +51,7 @@ extern UIThemeManager *axThemeManager;
  
  @param defaultTheme 默认的颜色配置
  */
-- (void)configDefaultTheme:(void (^)(UIThemeManager *theme))defaultTheme;
+- (void)configDefaultTheme:(void (^)(AXThemeManager *theme))defaultTheme;
 
 /**
  应用主题
@@ -73,7 +73,7 @@ extern UIThemeManager *axThemeManager;
 
  @param theme 主题
  */
-- (void)applyTheme:(UIThemeModel *)theme;
+- (void)applyTheme:(AXThemeModel *)theme;
 
 
 /**
@@ -98,14 +98,14 @@ extern UIThemeManager *axThemeManager;
 
  @return 所有已下载的主题
  */
-- (NSArray<UIThemeModel *> *)getAllDownloadedThemes;
+- (NSArray<AXThemeModel *> *)getAllDownloadedThemes;
 
 /**
  删除主题
 
  @param theme 主题
  */
-- (void)deleteTheme:(UIThemeModel *)theme;
+- (void)deleteTheme:(AXThemeModel *)theme;
 
 /**
  删除所有主题
